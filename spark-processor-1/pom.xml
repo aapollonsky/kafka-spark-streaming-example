@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.aap.kafka.spark.example</groupId>
+  <artifactId>spark-kafka-ex-p1</artifactId>
+  <version>1.0</version>
+  <name>spark-p1</name>
+  <properties>
+  	<maven.compiler.source>1.8</maven.compiler.source>
+  	<maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+        <groupId>com.sparkjava</groupId>
+        <artifactId>spark-core</artifactId>
+        <version>2.2</version>
+    </dependency>
+    
+    <dependency>
+    	<groupId>org.apache.spark</groupId>
+    	<artifactId>spark-streaming_2.10</artifactId>
+    	<version>1.5.2</version>
+	</dependency>
+	
+	<dependency>
+    	<groupId>org.apache.spark</groupId>
+    	<artifactId>spark-streaming-kafka_2.10</artifactId>
+    	<version>1.5.2</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-log4j12</artifactId>
+		<version>1.7.10</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-simple</artifactId>
+		<version>1.7.10</version>
+	</dependency>
+
+
+</dependencies>
+</project>
