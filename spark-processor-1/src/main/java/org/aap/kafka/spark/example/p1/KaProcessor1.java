@@ -37,7 +37,7 @@ public class KaProcessor1 {
 			System.out.println("-- transformed " + inrecord.field2);
 			return new OutRecord(inrecord.field1, inrecord.field2);
 			
-		// send to "kitcat2" topic for processing by Processor 2
+		// send to the "spipe2" topic for processing by Processor 2
 		}).foreachRDD(rdd -> {
 			rdd.foreachPartition(partitionOfRecords -> {
 				KaHelpers.sendToKafkaOutput (partitionOfRecords, "spipe2");

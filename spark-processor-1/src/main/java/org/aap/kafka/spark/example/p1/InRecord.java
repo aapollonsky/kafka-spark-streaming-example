@@ -18,6 +18,22 @@ public class InRecord implements Serializable {
 	
     public String toString() { 
         return "InRecord " + this.field1 + ":" + this.field2 + ":" + this.timeReceived.toString();
-    } 
+    }
+
+	public String getField1() {
+		return field1;
+	}
+
+	public void setField1(String field1) {
+		this.field1 = field1;
+	}
+
+	public String getField2() {
+		return field2;
+	}
+
+	public void setField2(String field2) {
+		this.field2 = field2;
+	} 
 
 }

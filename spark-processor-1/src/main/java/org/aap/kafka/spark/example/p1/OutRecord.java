@@ -16,6 +16,22 @@ class OutRecord implements Serializable {
 		timeCreated = Time.now();
 	}
 	
+	public String getOutfield1() {
+		return outfield1;
+	}
+
+	public void setOutfield1(String outfield1) {
+		this.outfield1 = outfield1;
+	}
+
+	public String getOutfield2() {
+		return outfield2;
+	}
+
+	public void setOutfield2(String outfield2) {
+		this.outfield2 = outfield2;
+	}
+	
     public String toString() { 
         return "OutRecord " + this.outfield1 + ":" + this.outfield2 + ":" + this.timeCreated.toString();
     } 
