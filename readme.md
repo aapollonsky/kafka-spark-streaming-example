@@ -6,10 +6,10 @@ This project was created as a Proof of Concept for using Spark Cluster with Kafk
 
 * *kafka-processor-1*. This Spark Streaming module emulates pipeline for input data processing. It reads data from the "spipe1" Kafka topic as DStream, then invokes one by one the distributed tasks (just placeholders in this example) on the DStreams to
 
-1. convert string to object
-2. filter out bad records
-3. translate to different objects
-4. send to chained "spipe2" Kafka topic (kafka-processor-2 is listening on this topic and suppose to finish processing)
+    * convert string to object
+    * filter out bad records
+    * translate to different objects
+    * send to chained "spipe2" Kafka topic (kafka-processor-2 is listening on this topic and suppose to finish processing)
 
 The module is dependent on Kafka, Zookeeper, Spark Cluster, and Spark Streaming
 
